@@ -33,10 +33,10 @@ function HomePage() {
                         1000, 
                         'ISS Tracker'    
                     ]}
-                    repeat={Infinity}
+                    repeat={Infinity} // repeat forever
                 />
             </div>
-            <video className="backgroundVideo" autoPlay loop muted controls={false}>
+            <video className="backgroundVideo" autoPlay loop muted controls={false}> 
                 <source src={backgroundVideo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
