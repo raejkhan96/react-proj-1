@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-// import backgroundVideo from './backgroundVideo.mp4';
-import HomePage from './HomePage';
+import HomePage from './views/HomePage/HomePage';
 
 function App() {
   return (
