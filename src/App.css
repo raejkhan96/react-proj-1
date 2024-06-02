@@ -1,4 +1,28 @@
-.App {
+/* App.css */
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the html and body take up the full height */
+html, body, #root, .App {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Add styles for Navbar, and other components as needed */
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +59,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

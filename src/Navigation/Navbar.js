@@ -1,5 +1,6 @@
 import React, { useEffect} from "react";
 import  "../Navigation/Navbar.css";
+import { Link } from "react-router-dom";
 
 // Utility function to dynamically load the font
 const loadFont = (fontName, fontUrl) => {
@@ -12,6 +13,7 @@ const loadFont = (fontName, fontUrl) => {
 
 
 function Navbar() {
+
   
   useEffect(() => {
     // Load Space Mono font from Google Fonts
@@ -24,19 +26,19 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/">
               Home 
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/track!">
               Track!
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              About
-            </a>
+            <Link className="nav-link" to="/about">
+              About, w ChatGPT API
+            </Link>
           </li>
           
         </ul>

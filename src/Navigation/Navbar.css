@@ -2,7 +2,7 @@
 /* Navbar.css */
 .navbar {
     position: fixed;
-    top: 0;
+    margin-top: 20px;
     width: 100%;
     z-index: 1000; /* Ensure this is higher than other components */
     background-color: #000000; /* Match the bg-light class from Bootstrap */
@@ -32,22 +32,14 @@
     font-family: 'Space Mono', monospace;
     text-decoration: none;
     padding: 10px 20px;
+    
   }
   
+  
+  .navbar a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Adjust thickness as needed */
+    text-underline-offset: 4px; 
+  }
 
-  .navbar a::before {
-    content: "";
-    position: absolute;
-    width: 5%;
-    top: 0;
-    bottom: 0;
-    background-image: linear-gradient(90deg, white, white); /* underline color */
-    background-size: 0 2px; /* vertical size of underline */
-    background-repeat: no-repeat;
-    background-position: left bottom; /* start position of underline */
-    transition: background-size .3s ease-in; /* duration and timing style of animation */
-  }
-  
-  .navbar a:hover::before {
-    background-size: 100% 2px;
-  }
+
